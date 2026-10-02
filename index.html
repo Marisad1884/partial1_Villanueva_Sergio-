@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoCare — Panel del proyecto</title>
+<title>Partial 1 Index — AutoCare</title>
 <style>
   :root{
     --bg:#10161d;
@@ -16,103 +16,82 @@
   *{box-sizing:border-box;}
   body{
     margin:0;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:
-      radial-gradient(circle at 20% 15%, rgba(255,138,61,0.08), transparent 45%),
-      var(--bg);
+    background:radial-gradient(circle at 20% 10%, rgba(255,138,61,.08), transparent 45%), var(--bg);
     color:var(--text);
     font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    padding:48px 20px;
+    padding:40px 20px 56px;
+    text-align:center;
   }
-  .wrap{width:100%;max-width:560px;}
-  h1{
-    margin:0 0 6px;
-    font-size:clamp(2.2rem,6vw,3rem);
-    font-weight:700;
-    letter-spacing:-0.02em;
+  .wrap{max-width:520px;margin:0 auto;}
+  .logo{display:block;margin:0 auto 18px;max-width:140px;height:auto;}
+  h1{margin:0 0 6px;font-size:clamp(1.7rem,5vw,2.3rem);letter-spacing:-.01em;}
+  .subtitle{margin:0 0 6px;color:var(--muted);font-size:1rem;}
+  .project{margin:0 0 28px;color:var(--accent);font-weight:600;}
+  .play{
+    display:inline-block;margin-bottom:34px;color:var(--accent);
+    font-weight:600;text-decoration:underline;text-underline-offset:4px;
   }
-  h1 span{color:var(--accent);}
-  .author{
-    margin:0 0 18px;
-    color:var(--accent);
-    font-size:.95rem;
-    font-weight:600;
-    letter-spacing:.01em;
+  .play:hover,.play:focus-visible{color:var(--text);}
+  section{margin-bottom:32px;}
+  h2{margin:0 0 14px;font-size:1.05rem;font-weight:700;}
+  .links{display:flex;flex-direction:column;gap:10px;align-items:center;}
+  .btn{
+    width:100%;max-width:340px;padding:13px 16px;
+    background:var(--surface);border:1px solid var(--border);border-radius:8px;
+    color:var(--text);text-decoration:none;font-size:.92rem;font-weight:600;
+    transition:border-color .15s ease, background .15s ease;
   }
-  .sub{
-    margin:0 0 40px;
-    color:var(--muted);
-    font-size:1.05rem;
-    line-height:1.5;
-    max-width:42ch;
+  .btn small{display:block;margin-top:2px;color:var(--muted);font-weight:400;font-size:.8rem;}
+  .btn:hover,.btn:focus-visible{border-color:var(--accent);background:#202a36;}
+  .btn:focus-visible,.play:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  .student{margin-top:44px;padding-top:28px;border-top:1px solid var(--border);}
+  .student h2{margin-bottom:6px;}
+  .name{margin:0 0 6px;font-size:1.6rem;font-weight:700;}
+  .email{margin:0 0 24px;color:var(--muted);font-size:.9rem;}
+  .email a{color:var(--muted);}
+  .photo{
+    width:min(400px,100%);aspect-ratio:1/1;margin:0 auto;display:block;
+    border-radius:50%;object-fit:cover;border:3px solid var(--border);background:var(--surface);
   }
-  .links{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-  }
-  .card{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    padding:18px 20px;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:10px;
-    text-decoration:none;
-    color:var(--text);
-    transition:border-color .15s ease, transform .15s ease;
-  }
-  .card:hover, .card:focus-visible{
-    border-color:var(--accent);
-    transform:translateX(4px);
-  }
-  .card:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
-  .icon{font-size:1.6rem;line-height:1;}
-  .text{display:flex;flex-direction:column;gap:2px;}
-  .title{font-weight:600;font-size:1.02rem;}
-  .desc{font-size:.88rem;color:var(--muted);}
-  .arrow{margin-left:auto;color:var(--muted);font-size:1.2rem;transition:transform .15s ease;}
-  .card:hover .arrow{transform:translateX(3px);color:var(--accent);}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Auto<span>Care</span></h1>
-    <p class="author">Sergio Gael Villanueva Martínez</p>
-    <p class="sub">Documentación del proyecto: estructura de la aplicación, modelo de ingresos y estrategia de ventas.</p>
+  <main class="wrap">
+    <!-- Logo: guarda el archivo como logo_ut.png junto a este index.html -->
+    <img class="logo" src="logo_ut.jpg" alt="Logo UT" onerror="this.style.display='none'">
 
-    <nav class="links">
-      <a class="card" href="AutoCare_diagrama.html">
-        <span class="icon">🚗</span>
-        <span class="text">
-          <span class="title">Diagrama de la aplicación</span>
-          <span class="desc">Estructura y flujo de AutoCare</span>
-        </span>
-        <span class="arrow">→</span>
-      </a>
+    <h1>PARTIAL 1 INDEX</h1>
+    <p class="subtitle">QUALITY TOPICS FOR SOFTWARE DESIGN</p>
+    <p class="project">Project: AutoCare</p>
 
-      <a class="card" href="AutoCare_modelo_ingresos_villanueva_martinez_sergio_gael.html">
-        <span class="icon">💰</span>
-        <span class="text">
-          <span class="title">Diagrama de ingresos</span>
-          <span class="desc">Modelo de ingresos del negocio</span>
-        </span>
-        <span class="arrow">→</span>
-      </a>
+    <!-- Cambia mario.html por el enlace real de tu juego -->
+    <a class="play" href="https://marisad1884.github.io/Mario-Videogame/">PLAY MARIO</a>
 
-      <a class="card" href="AutoCare_estrategia_ventas_villanueva_martinez_sergio_gael.html">
-        <span class="icon">📈</span>
-        <span class="text">
-          <span class="title">Diagrama de ventas</span>
-          <span class="desc">Estrategia de ventas</span>
-        </span>
-        <span class="arrow">→</span>
-      </a>
-    </nav>
-  </div>
+    <section>
+      <h2>FLOWCHART SECTION</h2>
+      <div class="links">
+        <a class="btn" href="AutoCare_diagrama.html">DIAGRAM 1 - MAIN PROCESS<small>App structure and flow</small></a>
+        <a class="btn" href="AutoCare_estrategia_ventas_villanueva_martinez_sergio_gael.html">DIAGRAM 2 - CLIENTS<small>Sales strategy</small></a>
+        <a class="btn" href="AutoCare_modelo_ingresos_villanueva_martinez_sergio_gael.html">DIAGRAM 3 - MONEY<small>Revenue model</small></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>USE CASE DIAGRAM SECTION</h2>
+      <div class="links">
+        <a class="btn" href="AutoCare_actor_conductor.html">DIAGRAM 1 - DRIVER ACTOR</a>
+        <a class="btn" href="AutoCare_actor_mecanico.html">DIAGRAM 2 - MECHANIC ACTOR</a>
+        <a class="btn" href="AutoCare_actor_ventas.html">DIAGRAM 3 - SALES ACTOR</a>
+      </div>
+    </section>
+
+    <section class="student">
+      <h2>STUDENT:</h2>
+      <p class="name">SERGIO GAEL VILLANUEVA MARTÍNEZ</p>
+      <p class="email">EMAIL: <a href="mailto:gael66905@vk.com">gael66905@vk.com</a></p>
+      <!-- Foto profesional de 400x400 px: guárdala como foto.jpg junto a este index.html -->
+      <img class="photo" src="foto.jpg" width="400" height="400" alt="Foto de Sergio Gael Villanueva Martínez">
+    </section>
+  </main>
 </body>
 </html>
